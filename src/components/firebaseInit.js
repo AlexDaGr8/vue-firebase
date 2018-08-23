@@ -1,10 +1,11 @@
 import config from './firebaseConfig'
 import firebase from 'firebase'
+import auth from '../../config.js'
 
 firebase.initializeApp(config);
 
 // Sign in existing user
-firebase.auth().signInWithEmailAndPassword('hintonalexander@gmail.com', 'th@fast3stKid')
+firebase.auth().signInWithEmailAndPassword(auth.email, auth.password)
 .catch(function(err) {
   // Handle errors
 });
