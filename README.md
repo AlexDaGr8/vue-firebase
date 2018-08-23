@@ -15,7 +15,7 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### More setup
 ```
-npm run lint
+add config.js to root with { email: '', password: '' }
 ```
