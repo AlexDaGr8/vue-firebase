@@ -17,5 +17,5 @@ npm run build
 
 ### More setup
 ```
-add config.js to root with { email: '', password: '' }
+add config.js to root with export default { email: '', password: '' }
 ```
