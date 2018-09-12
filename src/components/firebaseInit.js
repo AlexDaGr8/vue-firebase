@@ -7,12 +7,13 @@ firebase.initializeApp(config);
 // Sign in existing user
 firebase.auth().signInWithEmailAndPassword(auth.email, auth.password)
 .catch(function(err) {
-  // Handle errors
+  console.log('err', err)
 });
 
 var db = firebase.database();
 
 export default {
   users: db.ref('users/'),
-  contacts: db.ref('contacts/')
+  contacts: db.ref('contacts/'),
+  times: db.ref('times/')
 }
