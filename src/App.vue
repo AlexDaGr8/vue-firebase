@@ -10,6 +10,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/add">New Contact</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/scramble">Scramble</router-link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -17,3 +20,4 @@
     <router-view/>
   </div>
 </template>
+

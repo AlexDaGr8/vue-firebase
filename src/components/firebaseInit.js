@@ -13,5 +13,6 @@ var db = firebase.database();
 
 export default {
   users: db.ref('users/'),
-  contacts: db.ref('contacts/')
+  contacts: db.ref('contacts/'),
+  times: db.ref('times/')
 }

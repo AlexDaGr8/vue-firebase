@@ -35,7 +35,8 @@ export default {
     name: 'home', 
     firebase: {
         users: fb.users,
-        contacts: fb.contacts
+        contacts: fb.contacts,
+        times: fb.times
     }
 }
 </script>
