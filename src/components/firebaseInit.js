@@ -1,13 +1,12 @@
-import config from './firebaseConfig'
 import firebase from 'firebase'
 import auth from '../../config'
 
-firebase.initializeApp(config);
+firebase.initializeApp(auth.settings);
 
 // Sign in existing user
 firebase.auth().signInWithEmailAndPassword(auth.email, auth.password)
 .catch(function(err) {
-  // Handle errors
+  console.log('err', err)
 });
 
 var db = firebase.database();
